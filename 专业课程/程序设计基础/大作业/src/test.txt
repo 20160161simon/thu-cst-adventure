@@ -1,0 +1,14 @@
+LOAD ./map/map_2.map
+AUTOSAVE ./imgs/%4d.bmp
+LOAD ./map/map_1.map
+AUTOSAVE ./imgs/%4d.bmp
+LIMIT 100
+STATUS
+OP ./ops/1.ops
+4
+3 P1 P2 P3 
+4 LIT JMP MOV MOV 
+4 TL MOV LIT JMP 
+4 TL MOV MOV LIT
+RUN ./ops/2.ops
+EXIT
